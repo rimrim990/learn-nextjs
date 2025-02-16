@@ -9,7 +9,7 @@ const mockPosts: Post[] = Array.from({ length: 20 }).map((_, id) => ({
   updatedAt: new Date(),
 }))
 
-function delay(ms: number) {
+export function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 

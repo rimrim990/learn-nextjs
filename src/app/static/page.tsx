@@ -3,9 +3,9 @@ import { requestAll } from '@/util/request'
 const posts = await requestAll({})
 
 async function getStatus() {
-  const res = await fetch('http://localhost:3000/api')
-  if (!res.ok) throw new Error('request failed.')
-  return res.json()
+  // const res = await fetch('http://localhost:3000/api')
+  // if (!res.ok) throw new Error('request failed.')
+  return { status: 'ok ' }
 }
 
 export default async function PostsPage() {
